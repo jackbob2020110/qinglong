@@ -30,6 +30,10 @@ RUN set -x \
                              python2 \
                              g++ \
                              make \
+                             gcc \
+                             python3-dev \
+                             libffi-dev \
+                             libc-dev \
     && rm -rf /var/cache/apk/* \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
@@ -44,6 +48,8 @@ RUN set -x \
     && rm -rf /root/.npm \
     && rm -rf /root/.pnpm-store \
     && rm -rf /root/.cache \
-    && rm -f /package.json
+    && rm -f /package.json \
+    && pip install --upgrade pip \
+    && pip install selenium
 
 CMD [ "node" ]
