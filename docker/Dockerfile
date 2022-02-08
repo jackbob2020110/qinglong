@@ -1,5 +1,5 @@
-FROM whyour/ql:base
-ARG QL_MAINTAINER="whyour"
+FROM jackbob2016/ql:base
+ARG QL_MAINTAINER="jackbob2016"
 LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
 ARG QL_BRANCH=master
