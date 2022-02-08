@@ -1,5 +1,5 @@
 FROM node:alpine
-ARG QL_MAINTAINER="whyour"
+ARG QL_MAINTAINER="jackbob"
 LABEL maintainer="${QL_MAINTAINER}"
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
