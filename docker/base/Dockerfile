@@ -38,8 +38,8 @@ RUN set -x \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && touch ~/.bashrc \
-    && git config --global user.email "qinglong@@users.noreply.github.com" \
-    && git config --global user.name "qinglong" \
+    && git config --global user.email "jackbob@@users.noreply.github.com" \
+    && git config --global user.name "jackbob" \
     && npm install -g pnpm \
     && pnpm install -g pm2 \
     && pnpm install -g ts-node typescript tslib \
