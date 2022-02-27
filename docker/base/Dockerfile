@@ -49,7 +49,7 @@ RUN set -x \
     && rm -rf /root/.pnpm-store \
     && rm -rf /root/.cache \
     && rm -f /package.json \
-    && pip install --upgrade pip \
+    #&& pip install --upgrade pip \
     && pip install selenium
 
 CMD [ "node" ]
